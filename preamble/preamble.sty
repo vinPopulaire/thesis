@@ -1,0 +1,38 @@
+\ProvidesPackage{preamble}
+
+% Input
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\setotherlanguage[variant=modern]{greek}
+\newfontfamily\greekfont{FreeSerif}
+
+% Math packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{thm-restate}
+
+\usepackage{lmodern}
+\usepackage{float}
+
+% Algorithmic packages
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+% URLs
+\usepackage{hyperref}
+
+% Bibliography, index, appendix and sectioning
+\usepackage[nottoc]{tocbibind}
+\usepackage{makeidx}
+\usepackage[titletoc]{appendix}
+
+\input{preamble/environment}
+
+% License
+\usepackage[type={CC},modifier={by}]
+%[type={CC},modifier={by},version={4.0}]
+{doclicense}
+
+\makeindex
